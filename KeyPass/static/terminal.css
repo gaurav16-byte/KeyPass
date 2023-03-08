@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+.terminal {
+  font-family: "Source Code Pro", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+/* login or register link params */
+#login {
+	color: #18f01c;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: "Proto Mono Light", monospace;
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+@media screen and (min-width: 30rem) {
+  .terminal {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 60.5rem) {
+  .terminal {
+    max-width: 60.5rem;
+  }
+}
+
+.terminal__task-bar {
+  height: 2rem;
+  padding-left: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #efefef;
+}
+
+@media screen and (max-width: 30rem) {
+  .terminal__task-bar {
+    padding-top: 0.5rem;
+  }
+}
+
+.terminal__window {
+  height: 17.5rem;
+  padding: 1.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: #000;
+}
+
+.terminal__window--highlight {
+  color: #51e05d;
+}
+
+.terminal__circle {
+  position: relative;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: -0.1875rem;
+  border-radius: 50%;
+}
+
+.terminal__circle--red {
+  background-color: #fb574e;
+}
+
+.terminal__circle--yellow {
+  background-color: #fbbd2e;
+}
+
+.terminal__circle--green {
+  background-color: #51e05d;
+}
+
+.terminal__prompt--checkout, .terminal__prompt--show-contact, .terminal__prompt--mail {
+  opacity: 0;
+}
+
+.terminal__prompt--checkout {
+  animation: show-checkout 16s infinite;
+}
+
+.terminal__prompt--show-contact {
+  animation: show-show-contact 16s infinite;
+}
+
+.terminal__prompt--mail {
+  animation: show-mail 16s infinite;
+}
+
+.terminal__prompt--typing {
+  position: relative;
+}
+
+.terminal__prompt--typing .cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100%;
+  background: #000;
+  border-left: 1px solid #fff;
+}
+
+.terminal__prompt--typing .cover--gimme-dev {
+  animation: typing-gimme-dev 16s steps(19, end) infinite;
+}
+
+.terminal__prompt--typing .cover--show-contact {
+  animation: typing-show-contact 16s steps(19, end) infinite;
+}
+
+@keyframes typing-gimme-dev {
+  0% {
+    width: 100%;
+    opacity: 1;
+  }
+  12% {
+    width: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing-show-contact {
+  0%,
+  35% {
+    width: 100%;
+  }
+  47%,
+  100% {
+    width: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show-checkout {
+  0%,
+  20% {
+    opacity: 0;
+  }
+  25%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-mail {
+  0%,
+  55% {
+    opacity: 0;
+  }
+  60%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-uploaded {
+  0%,
+  63% {
+    opacity: 0;
+  }
+  68%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-show-contact {
+  0%,
+  28% {
+    opacity: 0;
+  }
+  32%,
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  background: #383838;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a:active {
+  color: #0091eb;
+  text-decoration: none;
+}
+
+.ins_h1 {
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	text-align: center;
+	font-size: 120px;
+	margin-top: 5%;
+	color: #f5ed14;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px red, 0 0 20px blue, 0 0 30px green, 0 0 40px yellow, 0 0 50px #e11d74, 0 0 60px black, 0 0 70px #ffff00, 0 0 80px #aa0000;
+  }
+  
+  to {
+    text-shadow: 0 0 20px red, 0 0 30px blue, 0 0 40px green, 0 0 50px yellow, 0 0 60px #e11d74, 0 0 70px black, 0 0 80px #ffff00, 0 0 90px #aa0000;
+  }
+}
+
+ul {
+	font-size: 22px;
+	font-family: "Courier New";
+	color: white;
+}
+ul p {
+	font-weight: bold;
+ }
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+ul a {
+	text-decoration: underline;
+}
+
+/* navigation bar parameters */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 3px;
+  width: 100%;
+  background-color: #383838;
+  overflow: hidden;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none !important;
+  font-family: Bangers;
+  font-size: 25px;
+  transition: transform 0.15s;
+  letter-spacing: 3px;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.navbar a.active {
+  background-color: #ddd;
+  color: #333;
+}

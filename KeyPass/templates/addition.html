@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KeyPass - PASSWORD MANAGER</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/title.ico">
+	<link rel="stylesheet" type="text/css" href="../static/addition.css">
+	<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+</head>
+
+<div id="short">
+	<h1>ADD PASSWORD</h1>
+<div id="flexbb" class="form-container">
+  <p id="beg">{{ message|safe }}</p>
+  <form action="/addition" method="post">
+    <div class="container">
+      <label for="name"><b></b></label>
+      <input type="text" placeholder="Enter choice" id="name" name="name" required>
+      <label for="user"></label>
+      <input type="text" id="user" name="user" placeholder="Enter Username" required>
+      <label for="password"></label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+      <button type="submit">SUBMIT !</button>
+      <p id="error">{{ vx|safe }}</p>
+    </div>
+  </form>
+</div>
+
+
+</html>

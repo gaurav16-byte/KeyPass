@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KeyPass - PASSWORD MANAGER</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/title.ico">
+	<link rel="stylesheet" type="text/css" href="../static/addserv.css">
+	<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+</head>
+
+<body>
+<h1>REMOVE SERVICE</h1>
+<div id="flexbb" class="form-container">
+  <p id="beg">{{ output|safe }}</p>
+  <form action="/drop" method="post">
+    <div class="container">
+      <label for="name"><b></b></label>
+      <input type="text" placeholder="Service Number" id="name" name="name" required><br><br>
+      <button type="submit">REMOVE !</button>
+      <p id="error">{{ err|safe }}</p>
+	  <p id="success">{{ success|safe }}</p>
+    </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+@font-face {
+	font-family: 'Proto Mono Semi Bold Shadow';
+    src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+         url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+         url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #15202B;
+}
+
+.shadow {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-family: "Proto Mono Semi Bold Shadow", monospace;
+  font-size: 120px;
+  font-weight: 800;
+  position: relative;
+  margin: 40px auto 0;
+  width: 78%;
+  height: 20%;
+  background: black;
+  margin-top: 7.5%;
+}
+
+.shadow::before,
+.shadow::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background: linear-gradient(45deg,red,blue,green,yellow,#e11d74,black,#ffff00,#aa0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: roam 25s linear infinite;
+}
+
+.shadow::after {
+  filter: blur(25px);
+}
+
+@keyframes roam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.image-container {
+  flex: 30%;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  margin: 0 auto;
+  float: left;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.text-container {
+  margin-left: -12%;
+  color: white;
+  flex: 70%;
+}
+
+.text-container p {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+	margin-left: -10px;
+}
+
+.refer {
+	background-color: #000;
+	color: #fff;
+	height: 10%;
+	position: fixed;
+	margin-top: 2%;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+i {
+	color: white;
+	font-size: 30px;
+	margin-top: 0.4%;
+	letter-spacing: 20px;
+	float: center;
+	place-items: center;
+}
+
+#paytm {
+	font-size: 20px;
+	color: white;
+	margin-top: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* login or register link params */
+#login {
+	color: #18f01c;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: "Proto Mono Light", monospace;
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+/* navigation bar parameters */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 3px;
+  width: 100%;
+  background-color: #15202B;
+  overflow: hidden;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Bangers;
+  font-size: 25px;
+  transition: transform 0.15s;
+  letter-spacing: 3px;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.navbar a.active {
+  background-color: #ddd;
+  color: #333;
+}

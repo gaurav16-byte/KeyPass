@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+/* login or register link params */
+#login {
+	color: #18f01c;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: "Proto Mono Light", monospace;
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+/* navigation bar parameters */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #060606;
+  overflow: hidden;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Bangers;
+  font-size: 25px;
+  transition: transform 0.15s;
+  letter-spacing: 3px;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.navbar a.active {
+  background-color: #ddd;
+  color: #333;
+}
+
+h1 {
+	/*color: #f5ed14;*/
+	text-align: center;
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	font-weight: bold;
+	font-size: 120px;
+	margin-top: 6%;
+}
+
+.text-glow {
+  text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #902DFE, #5F31F3, #1E37E5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+	background-color: #24272C;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+	border-radius: 10px;
+	place-items: center;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+input[type=password], [type=character] {
+  width: 80%;
+  padding: 14px 20px;
+  margin: 10px auto;
+  display: inline-block;
+  color: black;
+  border: 5px solid black;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+button {
+  background-color: #2de36a;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 25px;
+  color: #060606;
+  padding: 14px 20px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  letter-spacing: 5px;
+  border-radius: 30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+  background-color:#f1f1f1
+}
+
+#begin_text {
+	font-size: 25px;
+	background-color: white;
+	width: 90%;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	margin: 0 auto;
+	border-radius: 30px;
+	font-family: Andale Mono, monospace;
+	font-weight: bold;
+}
+
+#error {
+	color: red;
+	font-weight: bold;
+	font-family: Courier New;
+	font-size: 20px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.5);
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 20px 10px rgba(204,204,204,0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.5);
+  }
+}
+
+#backup {
+	font-size: 25px;
+	background-color: #f1f1f1;
+	width: 90%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 30px;
+	font-family: Andale Mono, monospace;
+	font-weight: bold; 
+}
+
+#bb {
+	background-color: #f1f1f1;
+	color: black;
+	font-size: 25px;
+	text-align: left;
+}
+
+
+#after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

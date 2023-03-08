@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>KeyPass - PASSWORD MANAGER</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/title.ico">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+  <link rel="stylesheet" href="../static/terminal.css">
+</head>
+<body class="ins">
+<!-- navigation bar -->
+<div class="navbar">
+  <a href="{{ url_for('index') }}">HOME</a>
+  <a href="{{ url_for('why') }}">WHY US?</a>
+  <a href="installation.html">INSTALLATION</a>
+  <a href="{{ url_for('about') }}">ABOUT THE DEV</a>
+  <a href="{{ url_for('login') }}" id="login">LOGIN>></a>
+  <a href="{{ url_for('register') }}" id="login">REGISTER>></a>
+</div>
+<h1 class="ins_h1">INSTALL-ATION</h1>
+</body>
+
+<body>
+<ul><p>STEP 1:</p> Head over to <a href="https://www.python.org">Python's official website</a>. Download the installer for your respective operating system. Install it and remember to check the ADD TO PATH option.</ul>
+<img src="../static/images/python.png">
+<ul><p>STEP 2:</p> Open the Command-Prompt in Windows, or Terminal in MacOS or Linux.</ul>
+<ul><p>STEP 3:</p> Type the following commands as being shown in the terminal windows.</ul>
+  <div class="terminal">
+    <div class="terminal__task-bar">
+		<span class="terminal__circle terminal__circle--red">
+		</span> 
+		<span class="terminal__circle terminal__circle--yellow">
+		</span> 
+		<span class="terminal__circle terminal__circle--green">
+		</span>
+	</div>
+    <div class="terminal__window">
+		<p class="terminal__prompt">C:\Users\[user]>
+			<span class="terminal__prompt--typing">
+				<span class="cover cover--gimme-dev">
+				</span>pip install wmi flask cryptography prettytable
+			</span>
+		</p>
+        <p class="terminal__prompt terminal__prompt--checkout">Collecting cryptography...</p>
+        <p class="terminal__prompt terminal__prompt--show-contact">$ </p>
+		<span class="terminal__prompt--typing"><span class="cover cover--show-contact"></span>python app.py</span></p>
+    </div>
+  </div>
+<ul><p>REMEMBER:</p> "pip install" method has to be done just once for the first time when you are running the program.</ul>
+<ul><p>NOTE:</p> The "python app.py" has to be done everytime you want to open KEYPASS. Open Terminal in the folder where your app.py is stored. Keep all the program files together for them to work properly.</ul>
+</body>
+
+<style>
+  .terminal {
+    font-family: "Source Code Pro", Monaco, "Courier New", monospace;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility
+  }
+
+  @media screen and (min-width:30rem) {
+    .terminal {
+      font-size: 1.25rem;
+      line-height: 2rem
+    }
+  }
+
+  @media screen and (min-width:60.5rem) {
+    .terminal {
+      max-width: 60.5rem
+    }
+  }
+
+  .terminal__task-bar {
+    height: 2rem;
+    padding-left: .5rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #efefef
+  }
+
+  @media screen and (max-width:30rem) {
+    .terminal__task-bar {
+      padding-top: .5rem
+    }
+  }
+
+  .terminal__window {
+    height: 17.5rem;
+    padding: 1.5rem;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-color: #000
+  }
+
+  .terminal__window--highlight {
+    color: #51e05d
+  }
+
+  .terminal__circle {
+    position: relative;
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    margin-right: -.1875rem;
+    border-radius: 50%
+  }
+
+  .terminal__circle--red {
+    background-color: #fb574e
+  }
+
+  .terminal__circle--yellow {
+    background-color: #fbbd2e
+  }
+
+  .terminal__circle--green {
+    background-color: #51e05d
+  }
+
+  .terminal__prompt--checkout,
+  .terminal__prompt--mail,
+  .terminal__prompt--show-contact {
+    opacity: 0
+  }
+
+  .terminal__prompt--checkout {
+    animation: show-checkout 16s infinite
+  }
+
+  .terminal__prompt--show-contact {
+    animation: show-show-contact 16s infinite
+  }
+
+  .terminal__prompt--mail {
+    animation: show-mail 16s infinite
+  }
+
+  .terminal__prompt--typing {
+    position: relative
+  }
+
+  .terminal__prompt--typing .cover {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    background: #000;
+    border-left: 1px solid #fff
+  }
+
+  .terminal__prompt--typing .cover--gimme-dev {
+    animation: typing-gimme-dev 16s steps(19, end) infinite
+  }
+
+  .terminal__prompt--typing .cover--show-contact {
+    animation: typing-show-contact 16s steps(19, end) infinite
+  }
+
+  @keyframes typing-gimme-dev {
+    0% {
+      width: 100%;
+      opacity: 1
+    }
+
+    12% {
+      width: 0
+    }
+
+    15% {
+      opacity: 1
+    }
+
+    16% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 0
+    }
+  }
+
+  @keyframes typing-show-contact {
+
+    0%,
+    35% {
+      width: 100%
+    }
+
+    100%,
+    47% {
+      width: 0
+    }
+
+    48% {
+      opacity: 1
+    }
+
+    49% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 0
+    }
+  }
+
+  @keyframes show-checkout {
+
+    0%,
+    20% {
+      opacity: 0
+    }
+
+    100%,
+    25% {
+      opacity: 1
+    }
+  }
+
+  @keyframes show-mail {
+
+    0%,
+    55% {
+      opacity: 0
+    }
+
+    100%,
+    60% {
+      opacity: 1
+    }
+  }
+
+  @keyframes show-uploaded {
+
+    0%,
+    63% {
+      opacity: 0
+    }
+
+    100%,
+    68% {
+      opacity: 1
+    }
+  }
+
+  @keyframes show-show-contact {
+
+    0%,
+    28% {
+      opacity: 0
+    }
+
+    100%,
+    32% {
+      opacity: 1
+    }
+  }
+
+  body {
+    background: #383838
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit
+  }
+
+  a:active,
+  a:focus,
+  a:hover {
+    color: #0091eb;
+    text-decoration: underline
+  }
+</style>
+<hr>
+</html>

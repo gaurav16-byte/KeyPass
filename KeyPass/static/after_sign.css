@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+body {
+	background-color: #241B35;
+}
+
+.button {
+  background-color: #8956F1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Courier New;
+  border-radius: 30px;
+  width: 70%;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.button-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers buttons horizontally */
+}
+
+a {
+	width: 100%;
+	text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KeyPass - PASSWORD MANAGER</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/title.ico">
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+</head>
+
+<body id="basic_home">
+
+<!-- navigation bar -->
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="{{ url_for('why') }}">WHY US?</a>
+  <a href="{{ url_for('installation') }}">INSTALLATION</a>
+  <a href="{{ url_for('about') }}">ABOUT THE DEV</a>
+  <a href="{{ url_for('login') }}" id="login">LOGIN>></a>
+  <a href="{{ url_for('register') }}" id="login">REGISTER>></a>
+</div>
+
+<!-- Flexbox homepage -->
+<div class="flex-container">
+  <div class="image-container">
+    <img src="../static/images/lockunlock.gif">
+  </div>
+  <div class="text-container">
+    <h1 class="flicker">KEYPASS</h1>
+    <p>A brand-new password manager free from breaches! <br>
+	Yes we are bragging it because we can, <br>
+	Say Goodbye to:
+	<ul>Stolen Credentials</ul>
+	<ul>Insecure DataBases</ul>
+	<ul>Repeated Passwords</ul><br>
+	</p>
+	<h6>Safe Device 🤝 Safe Passwords!</h6>
+  </div>
+</div>
+<hr>
+</body>
+
+</html>

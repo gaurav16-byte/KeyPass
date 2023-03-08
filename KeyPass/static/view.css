@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+body {
+  background-color: #1B1E23;
+}
+
+h1 {
+	margin-top: 1%;
+	text-align: center;
+	font-size: 120px;
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	color: #20C20E;
+	text-shadow: 10px 10px 20px #20C20E;
+}
+
+#viewdiv {
+	width: 90%;
+	text-align: center;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	height: 90%;
+	margin: 0 auto;
+	border-radius: 30px;
+	margin-top: -1%;
+}
+
+p {
+	font-size: 20px;
+	color: white;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 2px solid white;
+  font-family: Verdana;
+}
+
+table th {
+  background-color: #555;
+  font-family: Verdana;
+}
+
+table td {
+  background-color: #d1cb9d;
+  color: #555;
+}

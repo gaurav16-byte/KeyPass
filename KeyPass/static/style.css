@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+#basic_home {
+	background-color: #363c42;
+}
+
+/* login or register link params */
+#login {
+	color: #18f01c;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: "Proto Mono Light", monospace;
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+.flicker {
+  animation: glitch 4s infinite;
+}
+
+@keyframes glitch {
+  0%,19.999%,22%,62.999%,64%,64.999%,70%,to {
+        opacity: 1
+    }
+
+    20%,21.999%,63%,63.999%,65%,69.999% {
+        opacity: .1
+    }
+}
+
+/* navigation bar parameters */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 3px;
+  width: 100%;
+  background-color: #363c42;
+  overflow: hidden;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Bangers;
+  font-size: 25px;
+  transition: transform 0.15s;
+  letter-spacing: 3px;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.navbar a.active {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* flexbox params */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.image-container {
+  flex: 50%;
+  margin-right: 50px;
+  margin-top: -30px;
+  margin-left: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  width: 600px;
+  height: 450px;
+  border-radius: 5%;
+}
+
+.text-container {
+  color: white;
+  flex: 50%;
+}
+
+.text-container h1 {
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	margin-left: -90px;
+	text-align: center;
+	font-size: 120px;
+	margin-top: 10px;
+	color: #f5ed14;
+}
+
+.text-container p {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+	margin-left: -10px;
+	
+}
+
+ul {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	line-height: 22px;
+	font-size: 22px;
+	text-align: left;
+	margin-left: -20px;
+}
+
+.text-container h6 {
+	font-family: "ProtoMono-Regular", monospace;
+	font-size: 30px;
+	margin-top: 10px;
+	padding-left: 50px;
+}
+
+.flex-why {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.box {
+  flex-basis: calc(30%);
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #dce3bf;
+  padding: 20px;
+  border-radius: 5%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box p {
+  margin: 10px 0;
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  font-weight: bold;
+}
+
+.box h2 {	
+	font-family: Bangers;
+	letter-spacing: 5px;
+}
+
+.hidden {
+  display: none;
+  font-family: "Courier New";
+  font-size: 18px;
+}
+
+.box:hover .hidden {
+  display: block;
+}
+
+.why_us h1 {
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	font-size: 120px;
+	margin-top: 20px;
+	text-align:center;
+	color: #f5ed14;
+}
+
+.why_us {
+	background-color: #1a1919;
+}
+
+#text {
+  border-right: .1em hidden #333;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: typing 3s steps(30, end) infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 70%;
+	}
+}

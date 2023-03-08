@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+body {
+  background-color: #1B1E23;
+}
+
+h1 {
+	margin-top: 1%;
+	text-align: center;
+	font-size: 120px;
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	color: #20C20E;
+	text-shadow: 10px 10px 20px #20C20E;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: -50px;
+	width: 60%;
+	text-align: center;
+	background-color: white;
+}
+
+input[type=text], [type=password] {
+  width: 80%;
+  padding: 14px 20px;
+  margin: 10px auto;
+  display: inline-block;
+  color: black;
+  border: 5px solid black;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+button {
+  background-color: #2de36a;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 25px;
+  color: #060606;
+  padding: 14px 20px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  letter-spacing: 5px;
+  border-radius: 30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#error {
+	color: red;
+	font-size: 20px;
+	font-family: Courier New;
+	font-weight: bold;
+}
+
+#beg {
+	margin-top: -1%;
+	text-align: center;
+	font-size: 20px;
+	font-family: Verdana;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	
+}
+
+.form-container {
+	margin-top: 8%;
+	
+}

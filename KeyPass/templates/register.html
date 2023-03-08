@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KeyPass - PASSWORD MANAGER</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/title.ico">
+	<link rel="stylesheet" type="text/css" href="../static/login.css">
+	<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+</head>
+<body>
+
+<!-- navigation bar -->
+<div class="navbar">
+  <a href="{{ url_for('index') }}">HOME</a>
+  <a href="{{ url_for('why') }}">WHY US?</a>
+  <a href="{{ url_for('installation') }}">INSTALLATION</a>
+  <a href="{{ url_for('about') }}">ABOUT THE DEV</a>
+  <a href="{{ url_for('login') }}" id="login">LOGIN>></a>
+  <a href="register.html" id="login">REGISTER>></a>
+</div>
+
+<h1 class="text-glow">
+<span class="text-gradient">REGISTER</span>
+</h1>
+<div id='begin_text'>
+	<p>{{ message|safe }}<br></p>
+</div><br>
+<hr><br><br>
+<form action="/check_password" method="post">
+  <div class="container">
+    <label for="password"><b></b></label>
+    <input type="password" placeholder="Enter Password" id="password" name="password" required>
+	<label for="confirm_password"></label>
+	<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+    <button type="submit">REGISTER !</button>
+	<p id="error">{{ msg_match }}</p>
+  </div>
+</form>
+<br><br>
+<hr>
+<br><br>
+<div>
+	<p id="backup">{{ new_output|safe }}</p>
+</div>
+
+
+</body>
+</html>

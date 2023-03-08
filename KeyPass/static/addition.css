@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+body {
+	background-color: #1B1E23;
+}
+
+#short {
+	flex: wrap;
+	flex-direction: row;
+	text-align: center;
+	position: fixed;
+	background-color: #1B1E23;
+	border: 8px solid #20C20E;
+	box-shadow: 0 0 5px #20C20E, 0 0 10px #20C20E, 0 0 20px #20C20E, 0 0 40px #20C20E;
+	width: 90%;
+	height: 80%;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	border-radius: 20px;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	margin-top: 0%;
+	text-align: center;
+	font-size: 120px;
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	color: #20C20E;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: -50px;
+	width: 60%;
+	text-align: center;
+}
+
+input[type=text], [type=password] {
+  width: 80%;
+  padding: 14px 20px;
+  margin: 10px auto;
+  display: inline-block;
+  color: black;
+  border: 5px solid black;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+button {
+  background-color: #2de36a;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 25px;
+  color: #060606;
+  padding: 14px 20px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  letter-spacing: 5px;
+  border-radius: 30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding-top: 4px;
+  background-color:#f1f1f1;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#error {
+	color: red;
+	font-weight: bold;
+	font-family: Courier New;
+	font-size: 20px;
+}
+
+#beg {
+	font-size: 18px;
+	text-align: left;
+	font-weight: bold;
+	font-family: Verdana;
+	margin: 0 auto;
+	color: white;
+	margin-top:-4%;;
+}
+
+#flexbb {
+	display: flex;
+	flex-direction: row;
+}
+

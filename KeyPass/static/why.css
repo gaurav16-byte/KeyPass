@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Proto Mono';
+  src: url('../static/fonts/ProtoMono-Regular.ttf') format('truetype'),
+       url('../static/fonts/ProtoMono-Regular.woff') format('woff'),
+       url('../static/fonts/ProtoMono-Regular.woff2') format('woff2');
+  
+  font-family: 'Proto Mono Light';
+  src: url('../static/fonts/Proto Mono Light.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Light.woff') format('woff'),
+       url('../static/fonts/Proto Mono Light.woff2') format('woff2');
+  font-family: 'Proto Mono Semi Bold Shadow';
+  src: url('../static/fonts/Proto Mono Semi Bold Shadow.ttf') format('truetype'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff') format('woff'),
+       url('../static/fonts/Proto Mono Semi Bold Shadow.woff2') format('woff2');
+}
+
+/* login or register link params */
+#login {
+	color: #18f01c;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: "Proto Mono Light", monospace;
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+/* navigation bar parameters */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 3px;
+  width: 100%;
+  background-color: #1a1919;
+  overflow: hidden;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Bangers;
+  font-size: 25px;
+  transition: transform 0.15s;
+  letter-spacing: 3px;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.navbar a.active {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* flexbox params */
+.flex-why {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.box {
+  flex-basis: calc(30%);
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #dce3bf;
+  padding: 20px;
+  border-radius: 5%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box p {
+  margin: 10px 0;
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  font-weight: bold;
+}
+
+.box h2 {	
+	font-family: Bangers;
+	letter-spacing: 5px;
+}
+
+.hidden {
+  display: none;
+  font-family: "Courier New";
+  font-size: 18px;
+}
+
+.box:hover .hidden {
+  display: block;
+}
+
+.why_us h1 {
+	font-family: "Proto Mono Semi Bold Shadow", monospace;
+	font-size: 120px;
+	padding-top: 30px;
+	text-align:center;
+	color: #f5ed14;
+}
+
+.why_us {
+	background-color: #1a1919;
+}
+
+#text {
+  border-right: .1em hidden #333;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: typing 3s steps(30, end) infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 70%;
+	}
+}
