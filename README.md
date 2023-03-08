@@ -36,8 +36,8 @@ This is a majorly revamped version of PASSWORD-MANAGER. Hence, a new repository 
 
 
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=gaurav16-byte&show_icons=true&locale=en&layout=compact" alt="gaurav16-byte" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=gaurav16-byte&show_icons=true&locale=en&layout=compact&theme=radical" alt="gaurav16-byte" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gaurav16-byte&show_icons=true&locale=en" alt="gaurav16-byte" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=gaurav16-byte&show_icons=true&locale=en&theme=radical" alt="gaurav16-byte" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav16-byte&" alt="gaurav16-byte" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gaurav16-byte&theme=radical" alt="gaurav16-byte" /></p>
